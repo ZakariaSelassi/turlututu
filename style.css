@@ -145,10 +145,11 @@ body {
 .about {
     display: grid;
     grid-template-columns: 50px 50px 50px 50px 50px 50px;
+    grid-template-rows: 50px;
     grid-gap: 10px;
     background: #eeeeee;
     justify-content: center;
-    grid-template-areas: ".item-1 .item-2 .item-3 .item-4 .item-5 .item-6 " " .item-7 ";
+    grid-template-areas: ".item-1 .item-2 .item-3 .item-4 .item-5 .item-6 " "... .item-7 ";
     padding: 15px 20px;
 }
 
