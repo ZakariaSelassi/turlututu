@@ -22,9 +22,11 @@ RGB (238,238,238)
 */
 
 * {
-    padding: 0;
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
 }
 
 html,
@@ -34,12 +36,6 @@ body {
     width: 100%;
     height: auto;
 }
-
-
-/*#wrapper {
-  min-height: 100%;
-  position: relative;
-}*/
 
 
 /*navigation*/
@@ -147,25 +143,62 @@ body {
 /*About*/
 
 .about {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
+    display: grid;
+    grid-template-columns: 50px 50px 50px 50px 50px 50px;
+    grid-gap: 10px;
     background: #eeeeee;
+    justify-content: center;
+    grid-template-areas: ".item-1 .item-2 .item-3 .item-4 .item-5 .item-6 " " .item-7 ";
+    padding: 15px 20px;
 }
+
+.item-8 {}
 
 .about img {
     width: 50px;
-    height: 50px;
+    height: auto;
+}
+
+
+/* btn section */
+
+.btn-wrapper {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 20px;
+    background: white;
+}
+
+.btn-item,
+.btn-item2 {
+    margin: 20px 15px;
+    padding: 25px 25px;
+    color: white;
+    border-radius: 5%;
+    border: none;
+}
+
+.btn-item {
+    background: #016582;
+}
+
+.btn-item2 {
+    background: orange;
 }
 
 
 /*Footer*/
 
 .Footer {
-    height: auto;
+    width: 100%;
     background: #333333;
     font-size: 10px;
     font-weight: bold;
-    position: sticky;
+    position: relative;
+    height: auto;
+    clear: both;
 }
