@@ -1,0 +1,171 @@
+/*
+  HEADER, FOOTER 
+  HEX #333333,RGB (51,51,51)
+  **
+  HEX #1e93cc
+  RGB (30,147,204)
+  **
+  HEX #ffffff
+  RGB (255,255,255)  
+  **
+    HEX #1e93cc
+  RGB (30,147,204)
+***
+  HEX #ffffff
+  RGB (255,255,255)  
+
+****
+  HEX #eeeeee
+RGB (238,238,238)
+  HEX #ffffff
+  RGB (255,255,255)  
+*/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    width: 100%;
+    height: auto;
+}
+
+
+/*#wrapper {
+  min-height: 100%;
+  position: relative;
+}*/
+
+
+/*navigation*/
+
+.flex-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    background: #333333;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.nav-container ul {
+    display: flex;
+    list-style: none;
+}
+
+.logo {
+    padding-left: 10rem;
+}
+
+.right-nav {
+    padding-left: 35rem;
+}
+
+.logo a,
+.nav-container a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+}
+
+
+/* Banner */
+
+.main-banner {
+    width: 100%;
+    height: auto;
+    background: #1e93cc;
+}
+
+.icon img {
+    position: absolute;
+    top: 80px;
+    left: 20%;
+    width: 150px;
+    height: 150px;
+}
+
+.banner-container {
+    margin: auto;
+    width: 100%;
+    padding: 50px 10px;
+    text-align: center;
+}
+
+.banner-container img,
+.banner-container p,
+.banner-container button {
+    padding: 10px;
+    color: white;
+    font-size: 16px;
+}
+
+.banner-container button {
+    background-color: orange;
+    border: 2px solid white;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.banner-container a {
+    color: white;
+    text-decoration: none;
+    font-size: 40px;
+}
+
+
+/*under banner*/
+
+.under-banner,
+.under-service {
+    background: white;
+    padding: 10px 15px;
+    text-align: center;
+}
+
+.service-container {
+    display: grid;
+    grid-gap: 50px;
+    padding: 30px 250px;
+    grid-template-columns: 1fr 1fr;
+    background: #1e93cc;
+    color: white;
+}
+
+.service-container p {
+    margin: 10px 10px;
+}
+
+
+/*About*/
+
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background: #eeeeee;
+}
+
+.about img {
+    width: 50px;
+    height: 50px;
+}
+
+
+/*Footer*/
+
+.Footer {
+    height: auto;
+    background: #333333;
+    font-size: 10px;
+    font-weight: bold;
+    position: sticky;
+}
