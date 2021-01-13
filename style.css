@@ -171,7 +171,7 @@ nav ul {
     grid-template-areas: "item1 item2 item3 item4 item5 item6" ". . item7 item7 . .";
     padding-top: 50px;
     padding-bottom: 50px;
-    background: grey;
+    background: #eeeeee;
 }
 
 .item-1 {
