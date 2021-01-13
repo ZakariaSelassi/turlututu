@@ -42,6 +42,7 @@ body {
 
 .flex-container {
     display: flex;
+    justify-content: space-between;
     align-items: center;
     height: auto;
     background: #333333;
@@ -60,6 +61,8 @@ nav ul {
 
 .right-nav {
     margin-left: auto;
+    color: white;
+    padding-right: 50px;
 }
 
 .logo a,
