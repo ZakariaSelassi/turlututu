@@ -1,9 +1,7 @@
 # Projet turltutu 
 
 ## Contenu à recomposer : 
-<img src="turlututu.png"
-     alt="photo turlututu"/>
-
+![Projet](turlututu.png)
 
 [Projet](https://zakariaselassi.github.io/turlututu/)
 
