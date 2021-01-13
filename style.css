@@ -43,14 +43,13 @@ body {
 .flex-container {
     display: flex;
     align-items: center;
-    width: 100%;
     height: auto;
     background: #333333;
     font-size: 10px;
     font-weight: bold;
 }
 
-.nav-container ul {
+nav ul {
     display: flex;
     list-style: none;
 }
@@ -60,7 +59,7 @@ body {
 }
 
 .right-nav {
-    padding-left: 35rem;
+    margin-left: auto;
 }
 
 .logo a,
@@ -128,11 +127,29 @@ body {
 
 .service-container {
     display: grid;
-    grid-gap: 50px;
+    grid-gap: 20px;
     padding: 30px 250px;
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
     background: #1e93cc;
     color: white;
+    grid-template-areas: "item-a item-b " "item-c item-d";
+}
+
+.item-a {
+    grid-area: item-a;
+}
+
+.item-b {
+    grid-area: item-b;
+}
+
+.item-c {
+    grid-area: item-c;
+}
+
+.item-d {
+    grid-area: item-d;
 }
 
 .service-container p {
@@ -144,19 +161,47 @@ body {
 
 .about {
     display: grid;
-    grid-template-columns: 50px 50px 50px 50px 50px 50px;
-    grid-template-rows: 50px;
-    grid-gap: 10px;
-    background: #eeeeee;
-    justify-content: center;
-    grid-template-areas: ".item-1 .item-2 .item-3 .item-4 .item-5 .item-6 " "... .item-7 ";
-    padding: 15px 20px;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "item1 item2 item3 item4 item5 item6" ". . item7 item7 . .";
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background: grey;
 }
 
-.item-8 {}
+.item-1 {
+    grid-area: item1;
+}
+
+.item-2 {
+    grid-area: item2;
+}
+
+.item-3 {
+    grid-area: item3;
+}
+
+.item-4 {
+    grid-area: item4;
+}
+
+.item-5 {
+    grid-area: item5;
+}
+
+.item-6 {
+    grid-area: item6;
+}
+
+.item-7 {
+    grid-area: item7;
+    justify-self: center;
+}
 
 .about img {
-    width: 50px;
+    width: 80px;
     height: auto;
 }
 
