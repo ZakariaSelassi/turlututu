@@ -137,6 +137,7 @@ nav ul {
     background: #1e93cc;
     color: white;
     grid-template-areas: "item-a item-b " "item-c item-d";
+    position: relative;
 }
 
 .item-a {
@@ -220,6 +221,7 @@ nav ul {
     justify-content: center;
     padding: 30px 20px;
     background: white;
+    position: relative;
 }
 
 .btn-item,
@@ -237,6 +239,12 @@ nav ul {
 
 .btn-item2 {
     background: orange;
+}
+
+.img_msg {
+    position: absolute;
+    bottom: 20%;
+    left: 95%;
 }
 
 
